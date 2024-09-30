@@ -25,8 +25,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # 递归检查并更新所有子模块
-          fetch-depth: 0  # 获取完整的 git 历史记录
+          submodules: recursive  # 递归检查并更新子模块
+          fetch-depth: 0  # 获取完整的 Git 历史记录
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
@@ -35,24 +35,21 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-
       - name: Build with Hugo
+        working-directory: gujieblog  # 设置工作目录为 gujieblog
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc \
-            --minify \
-            --destination docs \
+          hugo --gc --minify \
+            --destination ../docs \  # 将生成的文件输出到根目录下的 docs 文件夹
             --baseURL "https://guuu16.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs  # 上传 docs 目录的静态文件
+          path: ./docs  # 上传 docs 文件夹
 
   deploy:
     environment:
