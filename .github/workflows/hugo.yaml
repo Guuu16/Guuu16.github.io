@@ -47,8 +47,8 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --destination docs \  # 将生成的静态站点文件存放到 docs 文件夹
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --destination docs \
+            --baseURL "https://guuu16.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
