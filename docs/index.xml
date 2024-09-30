@@ -14,11 +14,11 @@
     <lastBuildDate>Mon, 30 Sep 2024 14:28:35 +0800</lastBuildDate>
     <atom:link href="https://Guuu16.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Introduction</title>
+      <title>简介</title>
       <link>https://Guuu16.github.io/posts/introduction/</link>
       <pubDate>Mon, 30 Sep 2024 14:28:35 +0800</pubDate>
       <guid>https://Guuu16.github.io/posts/introduction/</guid>
-      <description>&lt;p&gt;一名国外在读水硕，一名测试开发工程师，转golang中，在此记录学习内容..&lt;/p&gt;</description>
+      <description>&lt;p&gt;记录python golang 前端的知识点，以及一些项目&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
