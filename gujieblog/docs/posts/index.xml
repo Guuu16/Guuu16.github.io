@@ -11,8 +11,46 @@
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 30 Sep 2024 14:28:35 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 19:28:35 +0800</lastBuildDate>
     <atom:link href="https://Guuu16.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Hugo 和 GitHub Pages 创建和托管网站</title>
+      <link>https://Guuu16.github.io/posts/hugo_github/</link>
+      <pubDate>Mon, 30 Sep 2024 19:28:35 +0800</pubDate>
+      <guid>https://Guuu16.github.io/posts/hugo_github/</guid>
+      <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;Hugo是由Go编写的快速现代静态网站生成器，旨在让网站创建变得有趣。Hugo是一个通用的网站框架。从技术角度来说，Hugo是一个&lt;a href=&#34;https://hugo.opendocs.io/about/benifits/&#34;&gt;静态网站生成器&lt;/a&gt;。与每个访问者请求动态构建页面的系统不同，Hugo在创建或更新内容时构建页面。由于网站被查看的频率远远多于编辑的频率，Hugo旨在为您的网站最终用户提供最佳的查看体验，并为网站作者提供理想的编写体验。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/Guuu16/photos/main/CleanShot%202024-09-30%20at%2019.51.56%402x.png&#34; alt=&#34;CleanShot 2024-09-30 at 19.51.56@2x.png&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;先决条件&#34;&gt;先决条件&lt;/h2&gt;
+&lt;p&gt;在深入研究之前，请确保你具备以下内容:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个GitHub账号&lt;/li&gt;
+&lt;li&gt;hugo安装在你的系统上&lt;/li&gt;
+&lt;li&gt;基本熟悉Git和GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设置github页面&#34;&gt;设置GitHub页面&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages&#34;&gt;* * GitHub Pages_ * *&lt;/a&gt; 是一个静态网站托管服务，它直接从GitHub上的存储库中获取HTML, CSS和JavaScript文件，可选地通过构建过程运行这些文件，并发布网站。*&lt;/p&gt;
+&lt;p&gt;除此之外，它也是免费的。&lt;/p&gt;
+&lt;p&gt;按照以下步骤开始:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建一个 named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; （你github的username） 的 repository 去发布你的网站&lt;/li&gt;
+&lt;li&gt;将存储库克隆到本地计算机。&lt;/li&gt;
+&lt;li&gt;添加一个&lt;code&gt;index.html&lt;/code&gt;文件到你的仓库中。&lt;/li&gt;
+&lt;li&gt;Commit and push your changes.&lt;/li&gt;
+&lt;li&gt;Enable GitHub Pages in your repository settings.&lt;/li&gt;
+&lt;li&gt;Within a few moments, your website will be live at &lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;*注意:请参阅GitHub的文档了解任何限制，你可以在&lt;a href=&#34;https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits&#34;&gt;这里&lt;/a&gt;找到。&lt;/p&gt;
+&lt;h2 id=&#34;使用hugo&#34;&gt;使用hugo&lt;/h2&gt;
+&lt;p&gt;在&lt;code&gt;blogname&lt;/code&gt;目录中为项目创建&lt;a href=&#34;https://gohugo.io/getting-started/directory-structure/&#34;&gt;目录结构&lt;/a&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site blogname
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;将当前目录更改为项目的根目录。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd blogname
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在当前目录中初始化一个空的Git仓库。（或者是直接在github上创建好clone）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;clone你喜欢的主题（比如&lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/wiki/Installation&#34;&gt;PaperMod&lt;/a&gt;）(papermod的具体用法点击链接)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>简介</title>
       <link>https://Guuu16.github.io/posts/introduction/</link>
