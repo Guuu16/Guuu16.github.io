@@ -4,21 +4,12 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-defaults:
-  run:
-    shell: bash
 
 jobs:
   build:
@@ -30,12 +21,12 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-          
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: recursive  # 递归检查并更新所有子模块
-          fetch-depth: 0  # 确保拉取完整的 git 历史
+          fetch-depth: 0  # 获取完整的 git 历史记录
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
@@ -56,13 +47,13 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --destination docs \
+            --destination docs \  # 将生成的静态站点文件存放到 docs 文件夹
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs
+          path: ./docs  # 上传 docs 目录的静态文件
 
   deploy:
     environment:
