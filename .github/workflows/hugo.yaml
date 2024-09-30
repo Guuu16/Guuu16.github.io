@@ -44,8 +44,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
-          hugo \
-            --gc \
+          hugo --gc \
             --minify \
             --destination docs \
             --baseURL "https://guuu16.github.io/"
