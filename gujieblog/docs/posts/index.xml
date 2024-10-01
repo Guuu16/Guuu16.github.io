@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Guuu16 Blog</title>
-    <link>https://Guuu16.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Guuu16 Blog</description>
     <image>
       <title>Guuu16 Blog</title>
-      <url>https://Guuu16.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://Guuu16.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.135.0</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 30 Sep 2024 19:28:35 +0800</lastBuildDate>
-    <atom:link href="https://Guuu16.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Hugo 和 GitHub Pages 创建和托管网站</title>
-      <link>https://Guuu16.github.io/posts/hugo_github/</link>
+      <link>http://localhost:1313/posts/hugo_github/</link>
       <pubDate>Mon, 30 Sep 2024 19:28:35 +0800</pubDate>
-      <guid>https://Guuu16.github.io/posts/hugo_github/</guid>
+      <guid>http://localhost:1313/posts/hugo_github/</guid>
       <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
 &lt;p&gt;Hugo是由Go编写的快速现代静态网站生成器，旨在让网站创建变得有趣。Hugo是一个通用的网站框架。从技术角度来说，Hugo是一个&lt;a href=&#34;https://hugo.opendocs.io/about/benifits/&#34;&gt;静态网站生成器&lt;/a&gt;。与每个访问者请求动态构建页面的系统不同，Hugo在创建或更新内容时构建页面。由于网站被查看的频率远远多于编辑的频率，Hugo旨在为您的网站最终用户提供最佳的查看体验，并为网站作者提供理想的编写体验。&lt;/p&gt;
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/Guuu16/photos/main/CleanShot%202024-09-30%20at%2019.51.56%402x.png&#34; alt=&#34;CleanShot 2024-09-30 at 19.51.56@2x.png&#34;  /&gt;
@@ -53,9 +53,9 @@
     </item>
     <item>
       <title>简介</title>
-      <link>https://Guuu16.github.io/posts/introduction/</link>
+      <link>http://localhost:1313/posts/introduction/</link>
       <pubDate>Mon, 30 Sep 2024 14:28:35 +0800</pubDate>
-      <guid>https://Guuu16.github.io/posts/introduction/</guid>
+      <guid>http://localhost:1313/posts/introduction/</guid>
       <description>&lt;p&gt;记录python golang 前端的知识点，以及一些项目&lt;/p&gt;</description>
     </item>
   </channel>

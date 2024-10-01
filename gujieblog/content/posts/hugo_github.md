@@ -6,6 +6,9 @@ draft = false
 disableShare = true
 ShowWordCount = false
 categories = 'Introduction'
+showToc = true
+TocOpen = true
+tocPosition = 'left'
 [editPost]
 URL = "https://medium.com/@magstherdev/github-pages-hugo-86ae6bcbadd"  # 编辑文章的链接，通常指向 GitHub 仓库
 Text = "medium原文"  # 编辑链接的文本，如“建议更改”
