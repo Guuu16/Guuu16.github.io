@@ -1,0 +1,13 @@
+# ImageGen prompt — Grand Archive Observatory v4
+
+Revise the attached selected photoreal personal-portfolio scene into a much more monumental establishing shot while preserving its exact tactile analog identity and continuity.
+
+Create a cinematic, ultra-wide-feeling “Deep-Night Archive Observatory”: a vast three-story converted industrial loft used as one person's private memory archive and creative studio. The camera is pulled far back with a wide 24mm architectural lens. The foreground desk occupies only the bottom 30–35% of the composition. Behind it: a triple-height space, exposed steel roof trusses, a tall panoramic rain-streaked city window spanning most of the rear wall, dense Shanghai-like night skyline with many layers of depth, warm mezzanine galleries and catwalks, an industrial stair, tall walls of wooden card-catalog drawers and books, rows of real analog consoles and archive equipment receding into the distance, hanging practical lamps and cables, distant pools of work light, atmospheric perspective. Strong foreground / midground / background separation and convincing human scale. No extra people.
+
+Preserve the key interactive objects and make each visually distinct and unobstructed: the vintage CRT television as the central hero on the desk; an open paper notebook on the left; a transparent physical acrylic prototype/circuit deck near the lower center; a mechanical brass-and-wood career archive machine with an open drawer on the right; the same framed chibi boy with black glasses and a small matching figurine on the right. Also retain a small wall clock and one subtle star-shaped practical light as easter-egg targets. Keep believable cords, paper, dust, scratches, wood grain, fingerprints, reflections, and clutter. All objects must feel real and physically integrated.
+
+Lighting: cinematic but natural, warm tungsten practical lamps and amber task-light pools contrasted with cool rainy blue city fill; subtle volumetric haze only where plausible; rich but restrained color grade; realistic bounced light, lens behavior, depth, shadow softness, and material response. It must look like a photographed high-budget production set, not 3D CGI, not illustration, not a game render.
+
+Composition: 1440×1024 design target with safe crop at 16:10 and 3:2. Leave clean dark negative space in the upper-left for a small DOM title. Keep the central CRT and five interaction targets inside the central 80% safe area. The desk should not block the grand architecture. No embedded UI, no floating cards, no interface labels, no readable typography, no watermark, no neon cyberpunk, no glossy sci-fi surfaces, no low-poly geometry.
+
+Mode: built-in ImageGen, using `grand-studio-final.png` as the referenced image.
